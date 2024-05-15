@@ -3,6 +3,27 @@ import SplitWithImage from '@/components/SplitWithImage'
 
 export default function Page() {
   return (
-    <SplitWithImage></SplitWithImage>
+    <>
+      <br />
+      <SplitWithImage></SplitWithImage>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </>
   )
 }
