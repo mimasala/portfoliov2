@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto as FontSans } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Boxes } from "@/components/ui/background-boxes";
 
 const fontSans = FontSans({
-  weight: '400',
   subsets: ["latin"],
   variable: "--font-sans",
 })
@@ -33,6 +33,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+
+          <Boxes className="z-0 fixed" />
           {children}
         </ThemeProvider>
       </body>
