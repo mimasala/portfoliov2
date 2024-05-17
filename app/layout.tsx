@@ -4,6 +4,9 @@ import "./globals.css";
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Boxes } from "@/components/ui/background-boxes";
+import { FloatingNav } from "@/components/ui/floating-navbar";
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { NavBar } from "@/components/NavBar";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -35,6 +38,8 @@ export default function RootLayout({
         >
 
           <Boxes className="z-0 fixed" />
+          <NavBar />
+
           {children}
         </ThemeProvider>
       </body>
